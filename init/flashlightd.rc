@@ -1,9 +1,9 @@
 # flashlightd - maps the OxygenOS flashlight slider (SystemUI torch strength steps 1..4) onto
 # real currents on the PMIC torch channels, which the Xiaomi camera HAL on this port leaves at
-# 6 mA for every step. Settings are compiled into the binary (src/main.cpp, src/level_map.cpp).
+# 6 mA for every step. All settings are compiled into the binary.
 #
 # Files:
-#   /vendor/bin/flashlightd               the daemon (src/)
+#   /vendor/bin/flashlightd               the daemon
 #   /vendor/etc/init/flashlightd.rc       this file
 #
 # Control at runtime:  flashlightd start|stop|restart|status  (drives ctl.start/ctl.stop)
